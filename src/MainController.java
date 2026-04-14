@@ -62,3 +62,31 @@ public class MainController {
         );
     }
 }
+@FXML
+public void eliminar() {
+
+    Libro seleccionado =
+            tablaLibros.getSelectionModel()
+                    .getSelectedItem();
+
+    if (seleccionado == null) return;
+
+    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+    alert.setContentText("¿Eliminar libro?");
+
+    alert.showAndWait().ifPresent(res -> {
+
+        repo.eliminar(seleccionado.getIsbn());
+        cargarTabla();
+    });
+}
+
+@FXML
+public void exportar() {
+
+    repo.exportarReporte();
+
+    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    alert.setContentText("Reporte exportado");
+    alert.show();
+}

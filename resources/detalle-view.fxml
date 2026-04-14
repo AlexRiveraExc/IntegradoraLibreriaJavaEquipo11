@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="DetalleController"
+      padding="10">
+
+    <Label text="Detalle del Libro"/>
+
+    <Label fx:id="lblIsbn"/>
+    <Label fx:id="lblTitulo"/>
+    <Label fx:id="lblAutor"/>
+    <Label fx:id="lblAnio"/>
+    <Label fx:id="lblGenero"/>
+    <Label fx:id="lblDisponible"/>
+
+    <Button text="Regresar" onAction="#regresar"/>
+
+</VBox>
