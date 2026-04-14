@@ -37,11 +37,10 @@
 
     <HBox spacing="10">
 
-        <Button text="Nuevo"/>
-        <Button text="Editar"/>
-        <Button text="Eliminar"/>
-        <Button text="Ver detalle"/>
-        <Button text="Exportar reporte"/>
+        <Button text="Nuevo" onAction="#nuevo"/>
+        <Button text="Ver detalle" onAction="#verDetalle"/>
+        <Button text="Eliminar" onAction="#eliminar"/>
+        <Button text="Exportar reporte" onAction="#exportar"/>
 
     </HBox>
 
