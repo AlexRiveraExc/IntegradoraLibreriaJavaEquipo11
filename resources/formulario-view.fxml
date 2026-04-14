@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="FormularioController"
+      padding="10">
+
+    <Label text="Formulario Libro"/>
+
+    <TextField fx:id="txtIsbn" promptText="ISBN"/>
+    <TextField fx:id="txtTitulo" promptText="Titulo"/>
+    <TextField fx:id="txtAutor" promptText="Autor"/>
+    <TextField fx:id="txtAnio" promptText="Año"/>
+    <TextField fx:id="txtGenero" promptText="Genero"/>
+
+    <CheckBox fx:id="chkDisponible" text="Disponible"/>
+
+    <HBox spacing="10">
+
+        <Button text="Guardar" onAction="#guardar"/>
+        <Button text="Cancelar" onAction="#cancelar"/>
+
+    </HBox>
+
+</VBox>
