@@ -5,7 +5,9 @@
 
 <VBox spacing="10"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="DetalleController"
+      fx:controller="MainController"
+
+
       padding="10">
 
     <Label text="Detalle del Libro"/>

@@ -103,7 +103,7 @@ public void nuevo() {
 
         FXMLLoader loader =
                 new FXMLLoader(
-                        getClass().getResource("/formulario-view.fxml")
+                        getClass().getResource("/main-view.fxml")
                 );
 
         Parent root = loader.load();
