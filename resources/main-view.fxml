@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MainController">
+
+    <Label text="Catalogo de Libros"/>
+
+    <TableView fx:id="tablaLibros">
+
+        <columns>
+
+            <TableColumn fx:id="colIsbn"
+                         text="ISBN"/>
+
+            <TableColumn fx:id="colTitulo"
+                         text="Titulo"/>
+
+            <TableColumn fx:id="colAutor"
+                         text="Autor"/>
+
+            <TableColumn fx:id="colAnio"
+                         text="Año"/>
+
+            <TableColumn fx:id="colGenero"
+                         text="Genero"/>
+
+            <TableColumn fx:id="colDisponible"
+                         text="Disponible"/>
+
+        </columns>
+
+    </TableView>
+
+    <HBox spacing="10">
+
+        <Button text="Nuevo"/>
+        <Button text="Editar"/>
+        <Button text="Eliminar"/>
+        <Button text="Ver detalle"/>
+        <Button text="Exportar reporte"/>
+
+    </HBox>
+
+</VBox>
